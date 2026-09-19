@@ -62,23 +62,35 @@ solo scraper.
 
 ## Nivel 3 — Scraping
 
-Para un sitio que no tiene ni API ni programa de afiliados. **Es el último recurso, no el primero.**
+Para un sitio que no tiene ni API ni programa de afiliados. Va último, y el motivo principal es
+técnico: **es la fuente que más se rompe**. Un selector cambia y el conector deja de andar; una
+API versionada no.
 
-### Antes de escribir una línea, leé esto
+### El encuadre, sin drama
 
-Raspar un sitio de e-commerce toca tres cosas distintas:
+Buscar precios de vuelos, compararlos y seguirlos día a día es una actividad perfectamente
+normal: es el negocio entero de Kayak, Skyscanner y Turismocity. Automatizar para vos mismo lo
+que harías abriendo veinte pestañas a mano no cambia eso.
 
-1. **Los términos de servicio del sitio.** Casi todas las OTAs los prohíben explícitamente. Para
-   uso personal y de bajo volumen el riesgo práctico es que te bloqueen la IP; para uso comercial
-   o redistribución de precios, el riesgo es un reclamo legal real.
-2. **La carga sobre su infraestructura.** Un rastreo diario de tus propios planes es despreciable.
-   Un crawler que barre rutas es abuso.
-3. **Qué hacés con los datos.** Consultar precios para vos mismo ≠ republicar su base de precios.
+El scraping tiene un matiz, y conviene tenerlo claro para dimensionarlo:
 
-**Recomendación honesta:** mantené el scraping para uso personal, con volumen bajo (tus planes,
-una vez al día), respetando `robots.txt`, con `User-Agent` identificable y rate limit conservador.
-Si el proyecto crece o lo vas a publicar, migrá esas fuentes a programas de afiliados — existen
-justamente para esto, y encima pagan comisión.
+- Casi todas las OTAs lo prohíben en sus términos de servicio. Eso es **materia contractual, no
+  penal**: incumplir un ToS no es un delito.
+- Para uso personal y volumen bajo (tus propios planes, una consulta por día), el riesgo realista
+  es uno solo: **que te bloqueen la IP y el conector deje de funcionar**.
+- Donde sí aparecen reclamos de verdad es en otra cosa: republicar la base de precios de una OTA
+  como producto propio, o barrer el sitio con miles de consultas y afectarle la infraestructura.
+  Nada de eso es lo que hace TravAway.
+
+### La regla práctica
+
+Rastreá tus planes, no el catálogo. Una consulta por plan por día, `robots.txt` respetado,
+`User-Agent` identificable y rate limit conservador te deja cómodamente del lado tranquilo y,
+de paso, es lo que evita que te bloqueen.
+
+Si algún día publicás la app o la compartís con gente, ahí sí migrá esas fuentes a programas de
+afiliados. No es un trámite defensivo: existen justamente para que alguien consulte sus precios
+y les mande compradores, y encima pagan comisión por hacerlo.
 
 ### Cómo se construye un conector web
 

@@ -143,5 +143,5 @@ orquestador, y te mantiene motivado.
 | Bloqueo por anti-bot (Cloudflare, DataDome) | Alto | Priorizar APIs oficiales y programas de afiliados; rate limit conservador |
 | Políticas de equipaje/cancelación incompletas | Medio | Estado `Desconocido` explícito + enriquecimiento bajo demanda |
 | Costo de las APIs al escalar | Medio | Caché agresiva, deduplicación de búsquedas, tiers gratuitos primero |
-| Términos de servicio de las OTAs | **Legal** | Ver `04-conectores.md`: afiliados > scraping; uso personal ≠ redistribución |
+| Términos de servicio de las OTAs | Bajo | Ver `04-conectores.md`: afiliados > scraping, y volumen bajo en lo que se raspe |
 | Android mata los jobs en background | Alto | Ya resuelto: el rastreo vive en el servidor |

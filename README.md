@@ -22,6 +22,7 @@ consultando en paralelo múltiples fuentes (GDS/agregadores por API + OTAs nacio
 | [docs/03-modelo-datos.md](docs/03-modelo-datos.md) | Esquema PostgreSQL + modelo canónico de oferta |
 | [docs/04-conectores.md](docs/04-conectores.md) | Las ~20 fuentes, cómo se integra cada una y el marco legal |
 | [docs/05-ui-boceto.md](docs/05-ui-boceto.md) | Pantallas, navegación y sistema visual (celeste / blanco / negro) |
+| [docs/06-accesos-y-credenciales.md](docs/06-accesos-y-credenciales.md) | Qué hay que conseguir afuera: API keys, infra, publicación |
 | [infra/docker-compose.yml](infra/docker-compose.yml) | PostgreSQL + Redis + pgAdmin para desarrollo local |
 
 **Boceto visual navegable** (7 pantallas + diagrama de arquitectura):
