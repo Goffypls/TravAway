@@ -24,6 +24,9 @@ consultando en paralelo múltiples fuentes (GDS/agregadores por API + OTAs nacio
 | [docs/05-ui-boceto.md](docs/05-ui-boceto.md) | Pantallas, navegación y sistema visual (celeste / blanco / negro) |
 | [infra/docker-compose.yml](infra/docker-compose.yml) | PostgreSQL + Redis + pgAdmin para desarrollo local |
 
+**Boceto visual navegable** (7 pantallas + diagrama de arquitectura):
+https://claude.ai/artifact/Q3x79pQ8Yquwhph8KqPdwN — privado, visible solo para el dueño del enlace.
+
 ## Arranque rápido del entorno de datos
 
 ```bash
