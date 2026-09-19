@@ -1,0 +1,21 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+artifacts/
+
+# Entorno
+.env
+*.env.local
+appsettings.Development.json
+appsettings.Local.json
+
+# Herramientas
+.idea/
+.vscode/
+*.DotSettings.user
+
+# Datos locales
+infra/pgdata/
